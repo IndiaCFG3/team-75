@@ -5,6 +5,10 @@ def home(request):
     return render(request, 'index.html')
 
 def activities(request):
+    activities_list=list(tasks.objects.all())
+    abc=[]
+    for b in activities_list:
+        email=b.mobilizer.email
     return render(request,'mobilizers/activites.html')
 
 def create(request):
@@ -12,7 +16,7 @@ def create(request):
 
 def leads(request):
     learner_list = list(Learners.objects.all())
-    print(type(learner_list))
+    
     abcd=[]
 
     for a in learner_list:
