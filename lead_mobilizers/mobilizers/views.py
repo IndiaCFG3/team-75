@@ -21,5 +21,17 @@ def leads(request):
             abcd.append(a)
         print(email)
         print(request.user.email) 
-    return render(request,'mobilizers/leads.html',{'learn':abcd})
+    return render(request,'mobilizers/leads.html',{'learn':abcd}) 
+
+def leadstrack(request):
+    return render(request,'mobilizers/leadstrack.html')
+
+def mobilizerbasic(request):
+    return render(request,'mobilizers/mobilizerbasic.html')
+
+def timetable(request):
+    return render(request,'mobilizers/timetable.html')
+
+def login(request):
+    return render(request,'mobilizers/login.html')
 

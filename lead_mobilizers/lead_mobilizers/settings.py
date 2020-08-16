@@ -125,3 +125,12 @@ STATIC_URL = '/static/'
 TEMPLATE_DIRS = [
     os.path.join(BASE_DIR, 'mobilizers/templates/mobilizers'),
 ]
+
+## Login url 
+LOGIN_URL = 'login'
+
+## Login redirect
+LOGIN_REDIRECT_URL = 'mobilizers-activites'
+
+
+
