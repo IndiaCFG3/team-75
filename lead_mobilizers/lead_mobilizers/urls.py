@@ -25,9 +25,8 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='mobilizers/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='mobilizers/logout.html'), name='logout'),
 
-  
     
-    path('mobilizers/activities/',mobilizers_views.activities,name='mobilizers-activites'), 
+    path('mobilizers/leads/mobilizers/activities/',mobilizers_views.activities,name='mobilizers-activites'), 
     path('mobilizers/create/',mobilizers_views.create,name='mobilizers-create'),
     path('mobilizers/leads/',mobilizers_views.leads,name='mobilizers-leads'),
     path('mobilizers/leadstrack/',mobilizers_views.leadstrack,name='mobilizers-leadstrack'),
