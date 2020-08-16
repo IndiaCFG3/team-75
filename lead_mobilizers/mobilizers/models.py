@@ -22,7 +22,8 @@ class Learners(models.Model):
     age=models.IntegerField(max_length=3)
     gender=models.ForeignKey(Gender,on_delete=models.CASCADE)
     status=models.ForeignKey(Status,on_delete=models.CASCADE)
-class Mobilizers(models.Model):
+    mobilizer=models.ForeignKey(Mobilizer,on_delete=models.CASCADE)
+class Mobilizer(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     contactnumber=models.CharField(max_length=13)
