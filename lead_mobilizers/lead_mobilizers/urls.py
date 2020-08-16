@@ -21,11 +21,16 @@ from mobilizers import views as mobilizers_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/',mobilizers_views.home,name="index"),
-    path('login/', auth_views.LoginView.as_view(template_name='mobilizers/index.html'), name='login'),
-    path('logout/', auth_views.LogoutView.as_view(template_name='mobilizers/logout.html'), name='logout'),
+    #path('login/', auth_views.LoginView.as_view(template_name='mobilizers/index.html'), name='login'),
+    #path('logout/', auth_views.LogoutView.as_view(template_name='mobilizers/logout.html'), name='logout'),
     
     path('mobilizers/activities/',mobilizers_views.activities,name='mobilizers-activites'), 
     path('mobilizers/create/',mobilizers_views.create,name='mobilizers-create'),
     path('mobilizers/leads/',mobilizers_views.leads,name='mobilizers-leads'),
-
+    path('mobilizers/leadstrack/',mobilizers_views.leadstrack,name='mobilizers-leadstrack'),
+    path('mobilizers/mobilizerbasic/',mobilizers_views.mobilizerbasic,name='mobilizers-mobilizerbasic'),
+    path('mobilizers/timetable/',mobilizers_views.timetable,name='mobilizers-timetable'),
+    path('login/',mobilizers_views.login,name='login'),
+                
+    
 ]
