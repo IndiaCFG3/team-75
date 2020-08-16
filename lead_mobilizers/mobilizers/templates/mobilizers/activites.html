@@ -13,18 +13,18 @@
         <thead>
           <tr>
             <th class="text-info">event name</th>
-            <th class="text-info">place</th>
-            <th class="text-info">timings</th>
+            <th class="text-info">Date</th>
             <th class="text-info">Description</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>{{eventname}}</td>
-            <td>{{place}}</td>
-            <td>{{timings}}</td>
-            <td>{{description}}
+            {% for a in learn %}
+            <td>{{a.name}}</td>
+            <td>{{a.date}}</td>
+            <td>{{a.description}}
           </td>
+          {% endfor %}
           </tr>
              </tbody>
       </table>

@@ -130,7 +130,7 @@ TEMPLATE_DIRS = [
 LOGIN_URL = 'login'
 
 ## Login redirect
-LOGIN_REDIRECT_URL = 'mobilizers-activites'
+LOGIN_REDIRECT_URL = 'mobilizers-leads'
 
 
 

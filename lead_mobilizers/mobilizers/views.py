@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Learners
+from .models import Learners,tasks
 
 def home(request):
     return render(request, 'index.html')
@@ -8,8 +8,11 @@ def activities(request):
     activities_list=list(tasks.objects.all())
     abc=[]
     for b in activities_list:
-        email=b.mobilizer.email
-    return render(request,'mobilizers/activites.html')
+        email=b.mobilizers.email
+        if request.user.email==email:
+            abc.append(b)
+    return render(request,'mobilizers/activites.html',{'learn':abc}) 
+    
 
 def create(request):
     return render(request,'mobilizers/create.html')
@@ -23,8 +26,7 @@ def leads(request):
         email=a.mobilizer.email
         if request.user.email==email:
             abcd.append(a)
-        print(email)
-        print(request.user.email) 
+        
     return render(request,'mobilizers/leads.html',{'learn':abcd}) 
 
 def leadstrack(request):
