@@ -19,7 +19,8 @@ class Course(models.Model):
 class Mobilizers(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
-    contactnumber=models.CharField(max_length=13)    
+    contactnumber=models.CharField(max_length=13) 
+    email=models.EmailField()   
 class Learners(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
