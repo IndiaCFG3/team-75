@@ -20,7 +20,7 @@ from lead_mobilizers import views as lead_mobilizers_views
 from mobilizers import views as mobilizers_views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/',mobilizers_views.home,name="index"),
+    path('',mobilizers_views.home,name="index"),
 
     path('login/', auth_views.LoginView.as_view(template_name='mobilizers/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='mobilizers/logout.html'), name='logout'),
