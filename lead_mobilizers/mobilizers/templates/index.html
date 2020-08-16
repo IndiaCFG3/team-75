@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -7,7 +8,7 @@
         <meta name="author" content="" />
         <title>Anudip Foundation</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.jpeg" />
+        <link rel="icon" type="image/x-icon" href="{% static 'mobilizers/favicon.jpeg" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -17,13 +18,13 @@
         <!-- Third party plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="{% static 'mobilizers/styles.css' %}" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="anudip-logo.jpeg" alt="ANUDIP FOUNDATION" height="50" width="100"></a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="{% static 'mobilizers/anudip-logo.jpeg' %}" alt="ANUDIP FOUNDATION" height="50" width="100"></a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
@@ -31,7 +32,7 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Vission</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="Login_v2/index.html">Sign In</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{% static 'mobilizers/index.html' %}">Sign In</a></li>
                     </ul>
                 </div>
             </div>
@@ -98,8 +99,8 @@
             <div class="container-fluid p-0">
                 <div class="row no-gutters">
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" />
+                        <a class="portfolio-box" href="{% static 'mobilizers/fullsize/1.jpg' %}">
+                            <img class="img-fluid" src="{% static 'mobilizers/thumbnails/1.jpg' %}" alt="" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">ANUDIP</div>
                                 <div class="project-name">NSDC visit</div>
@@ -107,8 +108,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="" />
+                        <a class="portfolio-box" href="{% static 'mobilizers/2.jpg' %}">
+                            <img class="img-fluid" src="{% static 'mobilizers/2.jpg' %}" alt="" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">ANUDIP</div>
                                 <div class="project-name">Project Name</div>
@@ -116,8 +117,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="" />
+                        <a class="portfolio-box" href="{% static 'mobilizers/3.jpg' %}">
+                            <img class="img-fluid" src="{% static 'mobilizers/3.jpg' %}" alt="" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">ANUDIP</div>
                                 <div class="project-name">Project Name</div>
@@ -125,8 +126,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="" />
+                        <a class="portfolio-box" href="{% static 'mobilizers/4.jpg' %}">
+                            <img class="img-fluid" src="{% static 'mobilizers/4.jpg' %}" alt="" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">ANUDIP</div>
                                 <div class="project-name">Project Name</div>
@@ -134,8 +135,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" />
+                        <a class="portfolio-box" href="{% static 'mobilizers/5.jpg' %}">
+                            <img class="img-fluid" src="{% static 'mobilizers/5.jpg' %}" alt="" />
                             <div class="portfolio-box-caption">
                                 <div class="project-category text-white-50">ANUDIP</div>
                                 <div class="project-name">Project Name</div>
@@ -143,8 +144,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="" />
+                        <a class="portfolio-box" href="{% static 'mobilizers/6.jpg' %}">
+                            <img class="img-fluid" src="{% static 'mobilizers/6.jpg' %}" alt="" />
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50">ANUDIP</div>
                                 <div class="project-name">Project Name</div>
@@ -152,8 +153,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/7.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/7.jpg" alt="" />
+                        <a class="portfolio-box" href="{% static 'mobilizers/7.jpg' %}">
+                            <img class="img-fluid" src="{% static 'mobilizers/7.jpg' %}" alt="" />
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50">ANUDIP</div>
                                 <div class="project-name">Project Name</div>
@@ -161,8 +162,8 @@
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/8.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/8.jpg" alt="" />
+                        <a class="portfolio-box" href="{% static 'mobilizers/8.jpg' %}">
+                            <img class="img-fluid" src="{% static 'mobilizers/8.jpg' %}" alt="" />
                             <div class="portfolio-box-caption p-3">
                                 <div class="project-category text-white-50">ANUDIP</div>
                                 <div class="project-name">Project Name</div>
@@ -205,41 +206,7 @@
                 </div>
             </div>
         </section>
-        <!-- Sign in -->
-        <!-- <section id="signin">
-            <div class="container">
-                <div class="row">
-                  <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-                    <div class="card card-signin my-5">
-                      <div class="card-body">
-                        <h5 class="card-title text-center">Sign In</h5>
-                        <form class="form-signin">
-                          <div class="form-label-group">
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                            <label for="inputEmail">Email address</label>
-                          </div>
-            
-                          <div class="form-label-group">
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                            <label for="inputPassword">Password</label>
-                          </div>
-            
-                          <div class="custom-control custom-checkbox mb-3">
-                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1">Remember password</label>
-                          </div>
-                          <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Sign in</button>
-                          <hr class="my-4">
-                          <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i class="fab fa-google mr-2"></i> Sign in with Google</button>
-                          <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-        </section> -->
-        <!-- Footer-->
+        
         <footer class="bg-light py-5">
             <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Anurag Foundation</div></div>
         </footer>

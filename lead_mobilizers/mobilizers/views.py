@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import Learners
 learner_list = Learners.objects.all()
+def home(request):
+    return render(request, 'index.html')
 def statusupdate(request):
     if request.user.is_authenticated:
         if request.user.email==request.Learner.mobilizer.email:

@@ -16,12 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from django.contrib.auth import views as auth_views
-from lead_mobilizers import views as lead_mobilizers_views
-from mobilizers import views as mobilizers_views
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',lead_mobilizers_views.home,name="index"),
-    path('login/', auth_views.LoginView.as_view(template_name='mobilizers/index.html'), name='login'),
+    path('/home/',include('mobilizers.urls')),
+    path('login/', auth_views.LoginView.as_view(template_name='mobilizers/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='mobilizers/logout.html'), name='logout')
 ]
