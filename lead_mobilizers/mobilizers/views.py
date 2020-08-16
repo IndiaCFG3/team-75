@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse
 from .models import Learners
 learner_list = Learners.objects.all()
 def statusupdate(request):
@@ -7,3 +7,11 @@ def statusupdate(request):
             t = Learners.objects.get(id=request.learner.id)
             t.status=request.status
 #add return
+
+
+def activities(request):
+    return render(request,'mobilizers/activites.html')
+
+
+def create(request):
+    return render(request,'mobilizers/create.html')
