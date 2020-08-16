@@ -1,0 +1,53 @@
+<form method="POST" action="">
+<label for="fname" >First Name:</label>
+<input type="text" id="fname" name="fname">
+<br>
+<label  for="lname">Last Name:</label>
+<input type="text" id="lname" name="lname">
+<br>
+<label for="age">Age:-</label>
+<input type="number" id="age" name="age">
+<br>
+<label for="contact">Contact Number:</label>
+<input type="number" id="contact" name="contact">
+{% for gender in gender_list %}
+<input type="radio" id="{{gender}}" name="gender" value="{{gender}}">
+  <label for="{{gender.gen}}">{{gender.gen}}</label><br>
+  {% endfor %}
+<br>
+<label for="city">City:</label>
+<select id="city" name="city">
+{% for city in city_list %}
+    <option value="{{city}}">{{city.Name}}</option>
+{% endfor %}
+ </select>
+<br>
+<label for="category">Category:</label>
+<select id="category" name="category">
+{% for category in category_list %}
+    <option value="{{category}}">{{category.Name}}</option>
+{% endfor %}
+</select>
+<br>
+<label for="course">Course:</label>
+<select id="course" name="course">
+{% for course in course_list %}
+    <option value="{{course}}">{{course.Name}}</option>
+{% endfor %}
+</select>
+<br>
+<label for="ca">Status:</label>
+<select id="status" name="status">
+{% for status in status_list %}
+    <option value="{{status}}">{{status.stat}}</option>
+{% endfor %}
+</select>
+<br>
+<label for="mobilizers">Mobilizer:</label>
+<select id="mobilizers" name="mobilizers">
+{% for mob in mob_list %}
+    <option value="{{mob}}">{{mob.first_name}}</option>
+{% endfor %}
+<button value="Submit">Submit</button>
+ 
+</form>
