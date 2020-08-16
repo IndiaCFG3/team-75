@@ -1,0 +1,102 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="{% static 'mobilizers/favicon.ico' %}" >
+
+	<link rel="stylesheet" type="text/css" href="{% static 'mobilizers/bootstrap.min.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'mobilizers/font-awesome.min.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'mobilizers/material-design-iconic-font.min.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'mobilizers/animate.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'mobilizers/hamburgers.min.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'mobilizers/animsition.min.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'mobilizers/select2.min.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'mobilizers/daterangepicker.css' %}">
+
+	<link rel="stylesheet" type="text/css" href="{% static 'mobilizers/util.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'mobilizers/main.css' %}">
+
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" method="POST"  action="{% url 'login' %}">
+					{% csrf_token %}
+					<span class="login100-form-title p-b-26">
+						Anudip Foundation
+					</span>
+					<span class="login100-form-title p-b-48">
+						<img src="{% static 'mobilizers/anudip-logo.png' %}" alt="Anudip foundation" height="40" width="100">
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input class="input100" type="text" name="username" id="username">
+						<span class="focus-input100" data-placeholder="Username"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Enter password">
+						<span class="btn-show-pass">
+							<i class="zmdi zmdi-eye"></i>
+						</span>
+						<input class="input100" type="password" name="password" id="password">
+						<span class="focus-input100" data-placeholder="Password"></span>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn" type="submit">
+								Login
+							</button>
+						</div>
+					</div>
+
+					<div class="text-center p-t-115">
+						<span class="txt1">
+							Don’t have an account?
+						</span>
+
+						<a class="txt2" href="#">
+							Sign Up
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="{% static 'mobilizers/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'mobilizers/animsition.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'mobilizers/popper.js' %}"></script>
+	<script src="{% static 'mobilizers/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'mobilizers/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'mobilizers/moment.min.js' %}"></script>
+	<script src="{% static 'mobilizers/daterangepicker.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'mobilizers/countdowntime.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'mobilizers/main.js' %}"></script>
+
+</body>
+</html>
