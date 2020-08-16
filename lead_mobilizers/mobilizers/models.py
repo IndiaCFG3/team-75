@@ -16,14 +16,6 @@ class City(models.Model):
 class Course(models.Model):
     Name=models.CharField(max_length=30)
     city=models.ForeignKey(City,on_delete=models.CASCADE)
-<<<<<<< HEAD
-
-=======
-class Mobilizer(models.Model):
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
-    contactnumber=models.CharField(max_length=13)
->>>>>>> 7b76111128022909f8d033c7cc0c5f3142ddddaf
 class Learners(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
@@ -34,14 +26,9 @@ class Learners(models.Model):
     age=models.IntegerField()
     gender=models.ForeignKey(Gender,on_delete=models.CASCADE)
     status=models.ForeignKey(Status,on_delete=models.CASCADE)
-<<<<<<< HEAD
 
 class Mobilizers(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     contactnumber=models.CharField(max_length=13)
-=======
-    mobilizer=models.ForeignKey(Mobilizer,on_delete=models.CASCADE)
-
->>>>>>> 7b76111128022909f8d033c7cc0c5f3142ddddaf
     
