@@ -30,6 +30,6 @@ class Learners(models.Model):
     age=models.IntegerField()
     gender=models.ForeignKey(Gender,on_delete=models.CASCADE)
     status=models.ForeignKey(Status,on_delete=models.CASCADE)
-    mobilizer=models.ForeignKey(Mobilizer,on_delete=models.CASCADE)
+    mobilizer=models.ForeignKey(Mobilizers,on_delete=models.CASCADE)
 
     

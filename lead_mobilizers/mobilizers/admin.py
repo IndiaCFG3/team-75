@@ -1,8 +1,8 @@
 from django.contrib import admin
-from .models import Status,Gender,Category,City,Course,Mobilizer
+from .models import Status,Gender,Category,City,Course,Mobilizers
 admin.site.register(Status)
 admin.site.register(Gender)
 admin.site.register(Category)
 admin.site.register(City)
 admin.site.register(Course)
-admin.site.register(Mobilizer)
+admin.site.register(Mobilizers)
