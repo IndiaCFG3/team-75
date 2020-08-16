@@ -12,6 +12,8 @@ def statusupdate(request):
 def activities(request):
     return render(request,'mobilizers/activites.html')
 
-
 def create(request):
     return render(request,'mobilizers/create.html')
+
+def leads(request):
+    return render(request,'mobilizers/leads.html')

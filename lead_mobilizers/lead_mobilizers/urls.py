@@ -24,7 +24,9 @@ urlpatterns = [
     path('',lead_mobilizers_views.home,name="index"),
     path('login/', auth_views.LoginView.as_view(template_name='mobilizers/index.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='mobilizers/logout.html'), name='logout'),
-    path('mobilizers/activities/',mobilizers_views.activities,name='mobilizers-activites'),
+    
+    path('mobilizers/activities/',mobilizers_views.activities,name='mobilizers-activites'), 
     path('mobilizers/create/',mobilizers_views.create,name='mobilizers-create'),
+    path('mobilizers/leads/',mobilizers_views.leads,name='mobilizers-leads'),
 
 ]
