@@ -20,7 +20,8 @@ class Mobilizers(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
     contactnumber=models.CharField(max_length=13) 
-    email=models.EmailField()   
+    email=models.EmailField(default='abc@abc.com')   
+
 class Learners(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
@@ -33,4 +34,8 @@ class Learners(models.Model):
     status=models.ForeignKey(Status,on_delete=models.CASCADE)
     mobilizer=models.ForeignKey(Mobilizers,on_delete=models.CASCADE)
 
-    
+class tasks(models.Model):
+    name=models.CharField(max_length=30)
+    descreption=models.TextField()
+    mobilizers=models.ForeignKey(Mobilizers,on_delete=models.CASCADE)
+    date=models.DateField()
