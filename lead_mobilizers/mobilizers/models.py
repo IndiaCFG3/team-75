@@ -16,6 +16,10 @@ class City(models.Model):
 class Course(models.Model):
     Name=models.CharField(max_length=30)
     city=models.ForeignKey(City,on_delete=models.CASCADE)
+class Mobilizers(models.Model):
+    first_name = models.CharField(max_length=30)
+    last_name = models.CharField(max_length=30)
+    contactnumber=models.CharField(max_length=13)    
 class Learners(models.Model):
     first_name = models.CharField(max_length=30)
     last_name = models.CharField(max_length=30)
@@ -26,9 +30,6 @@ class Learners(models.Model):
     age=models.IntegerField()
     gender=models.ForeignKey(Gender,on_delete=models.CASCADE)
     status=models.ForeignKey(Status,on_delete=models.CASCADE)
+    mobilizer=models.ForeignKey(Mobilizer,on_delete=models.CASCADE)
 
-class Mobilizers(models.Model):
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30)
-    contactnumber=models.CharField(max_length=13)
     
